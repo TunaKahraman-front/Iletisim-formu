@@ -45,7 +45,7 @@ if (!mail.value.trim()) {
     mail.classList.add('error');
     hasError = true;
 }
-
+```
 - CSS ile toast mesajı animasyonu:
 ```css
 .toast {
@@ -64,4 +64,4 @@ if (!mail.value.trim()) {
     opacity: 1;
     display: flex;
 }
-
+```
