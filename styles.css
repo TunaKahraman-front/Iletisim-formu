@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e6f4ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.box h2 {
+    font-size: 24px;
+    color: #2C4444;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.field {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.field label {
+    display: block;
+    font-size: 14px;
+    color: #06080b;
+    margin-bottom: 5px;
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.field textarea {
+    resize: none;
+}
+
+.opts {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.opts label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #2e3b4e;
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 62px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+.opts input[type="radio"] {
+    margin-right: 5px;
+}
+
+.field input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.req {
+    color: #0A775F;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0A775F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: green;
+}
+
+
+.err {
+    color: #DB3A34;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+
+.field input.error,
+.field textarea.error {
+    border: 1px solid #DB3A34;
+}
+
+
+.toast {
+    position: fixed;
+    top: 20px;
+    left: 37%;
+    background-color: #0A775F;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toast.show {
+    display: flex;
+    opacity: 1;
+}
+
+.toast-icon {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.toast-text {
+    font-size: 14px;
+}
+
+.toast-text strong {
+    font-size: 16px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="box">
+    <h2>Contact Us</h2>
+    <form id="form">
+        <div class="row">
+            <div class="field">
+                <label for="fname">First Name <span class="req">*</span></label>
+                <input type="text" id="fname" name="fname">
+                <span class="err" id="fname-err"></span>
+            </div>
+            <div class="field">
+                <label for="lname">Last Name <span class="req">*</span></label>
+                <input type="text" id="lname" name="lname">
+                <span class="err" id="lname-err"></span>
+            </div>
+        </div>
+        <div class="field">
+            <label for="mail">Email Address <span class="req">*</span></label>
+            <input type="email" id="mail" name="mail">
+            <span class="err" id="mail-err"></span>
+        </div>
+        <div class="field">
+            <label>Query Type <span class="req">*</span></label>
+            <br>
+            <div class="opts">
+                <label>
+                    <input type="radio" name="type" value="general"> General Enquiry
+                </label>
+                <label>
+                    <input type="radio" name="type" value="support"> Support Request
+                </label>
+            </div>
+            <span class="err" id="type-err"></span>
+        </div>
+        <div class="field">
+            <label for="msg">Message <span class="req">*</span></label>
+            <textarea id="msg" name="msg" rows="4"></textarea>
+            <span class="err" id="msg-err"></span>
+        </div>
+        <div class="field">
+            <label>
+                <input type="checkbox" id="agree" name="agree"> I consent to being contacted by the team <span class="req">*</span>
+            </label>
+            <span class="err" id="agree-err"></span>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<div id="toast" class="toast">
+    <div class="toast-icon">✔</div>
+    <div class="toast-text">
+        <strong>Message Sent!</strong><br>
+        Thanks for completing the form. We'll be in touch soon!
+    </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
