@@ -34,8 +34,8 @@ if (!mail.value.trim()) {
     hasError = true;
 }
 
-CSS ile toast mesajı animasyonu:
-
+-CSS ile toast mesajı animasyonu:
+```css
 .toast {
     transition: opacity 0.5s ease-in-out;
 }
