@@ -23,7 +23,7 @@
 
 ### Bağlantılar
 
-- Canlı Site URL: [Canlı Site URL'si](https://your-live-site-url.com)
+- Canlı Site URL: [Canlı Site URL'si]((https://tunakahraman-front.github.io/Iletisim-formu/))
 
 ### Kullanılan Teknolojiler
 
